@@ -126,7 +126,26 @@ Universal prereqs
 Add prereqs that apply to all your target schools (e.g. MATH 1A) using the Universal Prereqs section. They automatically appear in every manual set marked with 🌐.
 
 Templates
-If you have an ASSIST-derived JSON template, you can import it for automatic articulation matching.
+Templates are pre-built articulation files for specific UC major + CCC combinations. Instead of manually entering every required course, a template automatically loads the full articulation agreement — including which CCC courses satisfy each UC requirement, honors alternatives, and notes about non-articulated courses.
+
+How to import a template:
+
+Go to Major Prereqs → 📥 Import Major Template
+Click ⬆ Import Template JSON and select your .json file — or click 📋 Paste Template JSON to paste the contents directly
+The template loads instantly as a new prereq block
+Where to get templates:
+Templates are maintained separately and shared as .json files. Check the template repository or ask your counselor/advisor if one exists for your school and major combination. As more CCCs and majors are added, templates will be made available for download.
+
+What templates show:
+
+Each requirement section with matched/unmatched courses from your plan
+Which of your courses satisfy each UC requirement
+Courses that are not articulated (must be taken at the UC)
+Any AP credit the UC accepts for this major
+Admission notes and deadlines if included
+Manual vs Template view:
+Use the Manual only / Templates only / Both switcher at the top of the Major Prereqs page to control what's displayed.
+
 
 Matched vs missing
 Each prereq row shows:

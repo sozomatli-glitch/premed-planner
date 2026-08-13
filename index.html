@@ -975,7 +975,7 @@ function normalizeSection(s){
   s = s || {};
   return {
     id: s.id || id(),
-    title: s.title || "Untitled Section",
+    title: s.title || "",
     rule: (s.rule==="choose-one-group") ? "choose-one-group" : "complete-all",
     instruction: s.instruction || "",
     groups: Array.isArray(s.groups) ? s.groups.map(normalizeGroup) : []
@@ -1549,8 +1549,8 @@ function renderTemplateSection(t,section){
     body = section.groups.map(g=>renderGroup(t,section,g,true)).join('');
   }
   return `<div style="margin-bottom:12px;">
-    <div style="font-weight:700;">${section.title} <span class="req-sub" style="display:inline;">(${section.rule==="choose-one-group"?'choose one':'complete all'})</span></div>
-    ${section.instruction?`<div class="req-sub">${section.instruction}</div>`:''}
+    <div style="font-weight:700;">${section.title||section.instruction} <span class="req-sub" style="font-weight:400;">(${section.rule==='choose-one-group'?'choose one':'complete all'})</span></div>
+    ${section.title&&section.instruction?`<div class="req-sub">${section.instruction}</div>`:''}
     ${body}
   </div>`;
 }
